@@ -17,31 +17,42 @@ $(document).ready(function () {
             $('#tweet-submit').prop('disabled', false);
         }
     })
- 
- /*
-var submitIt = function () {
-        $('#tweet-submit').on('click', function (e) {
-            //stores what the user wrote
-            var newTweet = $('#tweet-content .tweet-compose').val();
-            //copies first tweet
-            $('.tweet:first').clone().prependTo('#stream');
-            //copies the profile pic over
-            $('.avatar:eq(1)').attr('src', 'http://coppermind.net/w/images/Iron.svg');
-            //copies name over
-            $('.fullname:first').text('Elend Venture');
-            $('.username:first').text('@TheLastEmperor');
-            //copies text over
-            $('.tweet-text:first').text(newTweet);
-            $('.reply .tweet-compose:first').attr("placeholder", "reply to @TheLastEmperor");
-            //resets to original input
-            initialTweet();
-            e.preventDefault();
-            $('#tweet-content .tweet-compose').val('');
-            $('#char-count').text('140');
-            //enables tweet info reveal
-            toggleTweet();
-        });
-        */
+
+    $('.button').on('click', function () {
+        var newTweet = $('#tweet-content .tweet-compose').val();
+        $('.tweet:first').clone().prependTo('#stream');
+        $('.avatar:eq(1)').attr('src', 'img/alagoon.jpg');
+        $('.fullname:first').text('Elend Venture');
+        $('.username:first').text('@TheLastEmperor');
+        $('.tweet-text').text(newTweet);
+        $('.reply .tweet-compose:first').attr("placeholder", "reply to @TheLastEmperor");
+    })
+
+
+    /*
+  var submitIt = function () {
+          $('#tweet-submit').on('click', function (e) {
+              //stores what the user wrote
+              var newTweet = $('#tweet-content .tweet-compose').val();
+              //copies first tweet
+              $('.tweet:first').clone().prependTo('#stream');
+              //copies the profile pic over
+              $('.avatar:eq(1)').attr('src', 'http://coppermind.net/w/images/Iron.svg');
+              //copies name over
+              $('.fullname:first').text('Elend Venture');
+              $('.username:first').text('@TheLastEmperor');
+              //copies text over
+              $('.tweet-text:first').text(newTweet);
+              $('.reply .tweet-compose:first').attr("placeholder", "reply to @TheLastEmperor");
+              //resets to original input
+              initialTweet();
+              e.preventDefault();
+              $('#tweet-content .tweet-compose').val('');
+              $('#char-count').text('140');
+              //enables tweet info reveal
+              toggleTweet();
+          });
+          */
 
 
 
