@@ -30,6 +30,8 @@ $(document).ready(function () {
         $('.reply .tweet-compose:first').attr("placeholder", "reply to @TheLastEmperor");
         $('#tweet-content .tweet-compose').val('');
         $('#char-count').text('140');
+        tweetHover();
+        statsClick();
     })
     function tweetHover() {
         $('.tweet').hover(
@@ -40,10 +42,15 @@ $(document).ready(function () {
             }
         );
     }
+
     tweetHover();
 
-
-
+    $('.stats').hide();
+    function statsClick() {
+        $('.tweet').click(function () {
+            $(this).find('.stats').toggle('collapse');
+        })
+    }
 
 })
 

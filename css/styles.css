@@ -207,10 +207,12 @@ body {
 		background-position: -20px -190px;
 		width: 14px;
 		height: 13px;
+		
 	}
 	.action-favorite {
 		background-position: -40px -190px;
 		width: 10px;
+		
 	}
 	.action-more {
 		background-position: -280px -190px;
@@ -220,6 +222,7 @@ body {
 	.stats {
 		margin: 12px 0 12px 42px;
 		border-top: 1px solid #e8e8e8;
+		
 	}
 		.stats, .stats div {
 			box-sizing: border-box;
